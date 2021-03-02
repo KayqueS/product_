@@ -23,7 +23,7 @@
 
         public override string ToString()
         {
-            return $"{Product}, $ {Value:F2}, {Amount} unidades, Total: $ {TotalValueInStock():F2}";
+            return $"{Product}, $ {Value:F2}, {Amount} units, Total: $ {TotalValueInStock():F2}";
         }
     }
 }

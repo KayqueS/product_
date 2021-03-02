@@ -8,34 +8,34 @@ namespace product_
         {
             Product_data x = new Product_data();
 
-            Console.WriteLine("Entre com os dados do produto:");
+            Console.WriteLine("Enter product data:");
 
-            Console.Write("Nome: ");
+            Console.Write("Name: ");
             x.Product = Console.ReadLine();
-            Console.Write("Preço: ");
+            Console.Write("Value: ");
             x.Value = double.Parse(Console.ReadLine());
-            Console.Write("Quantidade em estoque: ");
+            Console.Write("Quantity in stock: ");
             x.Amount = int.Parse(Console.ReadLine());
 
             Console.WriteLine();
-            Console.WriteLine($"Dados do produto: {x}");
+            Console.WriteLine($"Product data: {x}");
             Console.WriteLine();
 
-            Console.Write("Digite o número de produtos a ser adicionado ao estoque: ");
+            Console.Write("Enter the number of products to be added to the stock: ");
             int add = int.Parse(Console.ReadLine());
             x.AddProduct(add);
 
 
             Console.WriteLine();
-            Console.WriteLine($"Dados atualizados: {x}");
+            Console.WriteLine($"Updated data: {x}");
             Console.WriteLine();
 
-            Console.Write("Digite o número de produtos a ser removido do estoque: ");
+            Console.Write("Enter the number of products to be removed from stock: ");
             int remove = int.Parse(Console.ReadLine());
             x.RemoveProduct(remove);
 
             Console.WriteLine();
-            Console.WriteLine($"Dados atualizados: {x}");
+            Console.WriteLine($"Updated data: {x}");
             Console.WriteLine();
         }
     }
